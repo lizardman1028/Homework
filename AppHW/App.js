@@ -1,16 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button } from 'react-native';
-
+handleIncrement = () => {
+     this.setState({ count: this.state.count + 1 })
+   }
+  
+   handleDecrement = () => {
+     this.setState({ count: this.state.count - 1 })
+   }
 // export default class App extends React.Component {
-// state = {testVar: 9}
-// handleIncrement = () => {
-//   this.setState({ count: this.state.count + 1 })
-// }
-
-// handleDecrement = () => {
-//   this.setState({ count: this.state.count - 1 })
-// }
+state = {count: 9}
+// 
 //   render() {
 //     return (
 //       <View style={styles.container}>
@@ -34,11 +34,16 @@ import { Button } from 'react-native';
 const App = () => {
   const handlePress = () => false
   return (
-    <Button
-      onPress = {handlePress}
-      title = "Red button!"
-      color = "red"
+    
+    <View style={styles.container}>
+      <Button
+        onPress = {handlePress}
+        title = "Red button!"
+        color = "red"
       />
+      <Text>Yeetus der Fötus</Text>
+      <Text>{this.state.count}</Text>
+    </View>
   )
 }
 export default App
