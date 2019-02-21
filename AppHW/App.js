@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Button } from 'react-native';
 
 export default class App extends React.Component {
 state = {testVar: 9}
@@ -15,10 +16,18 @@ handleDecrement = () => {
       <View style={styles.container}>
         <Text>Yeetus der Fötus</Text>
         <Text>{this.state.testVar}</Text>
-        <div>
-          <button onClick={this.handleIncrement}>Increment by 1</button>
-          <button onClick={this.handleDecrement}>Decrement by 1</button>
-        </div>
+        <Button
+          onPress={handleIncrement}
+          title="UP"
+          color="#841584"
+          accessibilityLabel="Learn more about this purple button"
+        />
+        <Button
+          onPress={handleDecrement}
+          title="DOWN"
+          color="#841584"
+          accessibilityLabel="Learn more about this purple button"
+        />
       </View>
     );
   }
