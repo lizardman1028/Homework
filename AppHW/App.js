@@ -16,7 +16,7 @@ handleDecrement = () => {
       <View style={styles.container}>
         <Text>Yeetus der Fötus</Text>
         <Text>{this.state.testVar}</Text>
-        <Button
+        {/* <Button
           onPress={handleIncrement}
           title='UP'
           color='#841584'
@@ -25,12 +25,23 @@ handleDecrement = () => {
           onPress={handleDecrement}
           title='DOWN'
           color='#841584'
-        />
+        /> b */}
       </View>
+      
     );
   }
 }
-
+const App = () => {
+  const handlePress = () => false
+  return (
+    <Button
+      onPress = {handlePress}
+      title = "Red button!"
+      color = "red"
+      />
+  )
+}
+export default App
 const styles = StyleSheet.create({
   container: {
     flex: 1,
