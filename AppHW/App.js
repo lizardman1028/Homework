@@ -3,10 +3,10 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Button } from 'react-native';
 state = {count: 9}  
 handleIncrement = () => {
-  setState({ count: this.state.count + 1 })
+  this.setState({ count: this.state.count + 1 })
 }
 handleDecrement = () => {
-  setState({ count: this.state.count - 1 })
+  this.setState({ count: this.state.count - 1 })
 }
 // export default class App extends React.Component {
 
@@ -37,14 +37,14 @@ const App = () => {
     
     <View style={styles.container}>
       <Button
-        onPress = {handleIncrement}
+        onPress = {this.handleIncrement()}
         title = "UP!"
         color = "green"
       />
       <Text>Yeetus der Fötus</Text>
       <Text>{this.state.count}</Text>
       <Button
-        onPress = {handleDecrement}
+        onPress = {this.handleDecrement()}
         title = "DOWN!"
         color = "red"
       />
