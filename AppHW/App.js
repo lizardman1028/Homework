@@ -2,15 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
-
-yote = {testVar: 9}
-
-
+state = {testVar: 9}
   render() {
     return (
       <View style={styles.container}>
         <Text>Yeetus der Fötus</Text>
         <Text>{this.yote.testVar}</Text>
+        <Text>this.setState({this.state.testVar})</Text>
       </View>
     );
   }
