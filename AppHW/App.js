@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default class App extends React.Component {
 
 yote = {
-  testVar: 10
+  testVar: 9
 }
 
   render() {
