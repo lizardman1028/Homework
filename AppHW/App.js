@@ -1,13 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button } from 'react-native';
-handleIncrement = () => {
-     setState({ count: this.state.count + 1 })
-   }
-  
-   handleDecrement = () => {
-     setState({ count: this.state.count - 1 })
-   }
+  handleIncrement = () => {
+    setState({ count: this.state.count + 1 })
+  }
+  handleDecrement = () => {
+    setState({ count: this.state.count - 1 })
+  }
 // export default class App extends React.Component {
 state = {count: 9}
 // 
