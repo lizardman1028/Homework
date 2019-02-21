@@ -20,7 +20,7 @@ yote = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0000',
+    backgroundColor: '#ffff',
     alignItems: 'center',
     justifyContent: 'center',
   },
