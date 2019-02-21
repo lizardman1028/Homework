@@ -3,9 +3,8 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
 
-yote = {
-  testVar: 9
-}
+yote = {testVar: 9}
+
 
   render() {
     return (
