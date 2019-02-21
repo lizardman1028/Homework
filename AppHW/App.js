@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button } from 'react-native';
 handleIncrement = () => {
-     etState({ count: this.state.count + 1 })
+     setState({ count: this.state.count + 1 })
    }
   
    handleDecrement = () => {
