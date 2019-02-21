@@ -18,15 +18,13 @@ handleDecrement = () => {
         <Text>{this.state.testVar}</Text>
         <Button
           onPress={handleIncrement}
-          title="UP"
-          color="#841584"
-          accessibilityLabel="Learn more about this purple button"
+          title='UP'
+          color='#841584'
         />
         <Button
           onPress={handleDecrement}
-          title="DOWN"
-          color="#841584"
-          accessibilityLabel="Learn more about this purple button"
+          title='DOWN'
+          color='#841584'
         />
       </View>
     );
