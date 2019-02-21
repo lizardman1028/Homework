@@ -27,7 +27,7 @@ handleDecrement = () => {
           color='#841584'
         /> b */}
       </View>
-      
+
     );
   }
 }
@@ -41,7 +41,7 @@ const App = () => {
       />
   )
 }
-export default App
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
