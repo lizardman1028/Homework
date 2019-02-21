@@ -37,12 +37,17 @@ const App = () => {
     
     <View style={styles.container}>
       <Button
-        onPress = {handlePress}
-        title = "Red button!"
-        color = "red"
+        onPress = {handleIncrement}
+        title = "UP!"
+        color = "green"
       />
       <Text>Yeetus der Fötus</Text>
       <Text>{this.state.count}</Text>
+      <Button
+        onPress = {handleDecrement}
+        title = "DOWN!"
+        color = "red"
+      />
     </View>
   )
 }
