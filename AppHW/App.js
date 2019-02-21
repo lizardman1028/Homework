@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button } from 'react-native';
 
-// export default class App extends React.Component {
+
 
 // 
 //   render() {
@@ -25,34 +25,36 @@ import { Button } from 'react-native';
 //     );
 //   }
 // }
-const App = () => {
-  state = {count: 9}  
-handleIncrement = () => {
-  this.setState({ count: this.state.count + 1 })
+export default class App extends React.Component {
+  state = { count: 9 }
+  handleIncrement = () => {
+    this.setState({ count: this.state.count + 1 })
+  }
+  handleDecrement = () => {
+    this.setState({ count: this.state.count - 1 })
+  }
+  render() {
+    return (
+
+      <View style={styles.container}>
+        <Button
+          onPress={this.handleIncrement}
+          title="UP!"
+          color="green"
+        />
+        <Text>Yeetus der Fötus</Text>
+        <Text>{this.state.count}</Text>
+        <Button
+          onPress={this.handleDecrement}
+          title="DOWN!"
+          color="red"
+        />
+      </View>
+    )
+  }
 }
-handleDecrement = () => {
-  this.setState({ count: this.state.count - 1 })
-}
-  const handlePress = () => false
-  return (
-    
-    <View style={styles.container}>
-      <Button
-        onPress = {this.handleIncrement()}
-        title = "UP!"
-        color = "green"
-      />
-      <Text>Yeetus der Fötus</Text>
-      <Text>{this.state.count}</Text>
-      <Button
-        onPress = {this.handleDecrement()}
-        title = "DOWN!"
-        color = "red"
-      />
-    </View>
-  )
-}
-export default App
+
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
