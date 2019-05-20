@@ -25,8 +25,9 @@ import { Button } from 'react-native';
 //     );
 //   }
 // }
+//hello
 export default class App extends React.Component {
-  state = { count: 9 }
+  state = { count: 0 }
   handleIncrement = () => {
     this.setState({ count: this.state.count + 1 })
   }
@@ -36,12 +37,14 @@ export default class App extends React.Component {
   render() {
     return (
 
+    
       <View style={styles.container}>
         <Button
           onPress={this.handleIncrement}
           title="UP!"
           color="green"
         />
+        
         <Text>Yeetus der Fötus</Text>
         <Text>{this.state.count}</Text>
         <Button
